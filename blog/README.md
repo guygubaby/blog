@@ -16,6 +16,6 @@ features:
 
 # welcome :tada:
 
-![books](/images/xixi.jpeg)
+![books](/blog/images/xixi.jpeg)
 
 <!-- <img :src="$withBase('/images/xixi.jpeg')" alt="foo"> -->
