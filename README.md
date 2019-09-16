@@ -10,7 +10,7 @@ guygubaby's blog here
 
 - start writing
   ```shell script
-  yarn blog:dev
+  yarn dev
   ```
 
 - deploy the blog
