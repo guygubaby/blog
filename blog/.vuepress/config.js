@@ -40,6 +40,10 @@ module.exports = {
           { 
             title:'mongodb',
             path: '/docker/mongo'
+          },
+          {
+            title:'compose',
+            path: '/docker/compose'
           }
         ]
       },

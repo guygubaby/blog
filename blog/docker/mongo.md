@@ -5,47 +5,45 @@ Important info
 :::
 You need to stop app before importing MongoDB database with command:
 
-```shell script
+```bash
 docker stop xxx-app
 ```
 
-
-
 1. list docker containers 
 
-```shell script
+```bash
 docker ps
 ```
 
 2. enter inside docker container
 
-```shell script
+```bash
 docker exec -it container-id bash
 ```
 
 3. go to `/` directory
 
-```shell script
+```bash
 cd /
 ```
 
 4. backup the database to `/dump` directory
-```shell script
+```bash
 mongodump -o /dump/
 ```
 
 5. exit docker container
-```shell script
+```bash
 exit
 ```
 
 6. copy the directory from container
-```shell script
+```bash
 docker cp container-id:/dump .
 ```
 
 7. restore the database from backup directory
-```shell script
+```bash
 docker cp dump new-container-id:/data/
 docker exec -it new-container-id bash
 cd /data
@@ -56,7 +54,7 @@ exit
 ps: Backup and restore scripts
 
 - backup script
-```shell script
+```bash
 #!/bin/bash
 DATE=$(date +%Y-%m-%d-%H-%M)
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
@@ -78,7 +76,7 @@ fi
 ```
 
 - restore script
-```shell script
+```bash
 #!/bin/bash
 if [ $# -eq 0 ]
   then
