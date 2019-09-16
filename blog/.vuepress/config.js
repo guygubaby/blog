@@ -34,15 +34,15 @@ module.exports = {
       },
       {
         title: 'docker',   // 必要的
-        // path: '/docker/',      // 可选的, 应该是一个绝对路径
+        path: '/docker/',      // 可选的, 应该是一个绝对路径
         collapsable: false, // 可选的, 默认值是 true,
         children:[
           { 
-            title:'mongodb',
+            title:'mongodb 数据迁移',
             path: '/docker/mongo'
           },
           {
-            title:'compose',
+            title:'docker-compose 例子',
             path: '/docker/compose'
           }
         ]

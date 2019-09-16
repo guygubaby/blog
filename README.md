@@ -1,24 +1,16 @@
-guygubaby's blog here
+<h1 align="center">Welcome to my blog 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+</p>
 
-### setup
-  ```shell script
-  git clone https://github.com/guygubaby/blog
-  ```
+- category
 
-- then follow the steps of [vuepress](https://vuepress.vuejs.org/)
+  - [docker](https://guygubaby.github.io/blog/docker/)
 
 
-- start writing
-  ```shell script
-  yarn dev
-  ```
+## Show your support
 
-- deploy the blog
-  ```shell script
-  ./deploy.sh
-  ```
+Give a ⭐️ if this project helped you!
 
-- push to GitHub
-  ```shell script
-  ./commit.sh
-  ```
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

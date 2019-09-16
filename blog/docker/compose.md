@@ -1,22 +1,5 @@
 # docker-compose examples
 
-- bootstrap.sh
-```bash
-mkdir -p app-compose
-cd app-compose || exit
-curl -o docker-compose.yml http://data.app.v-ju.com.cn/docker-compose.yml
-docker-compose up -d
-echo 'services started successfully, use docker-compose ps to inspect your services'
-```
-
-- setup in server
-```bash
-scp bootstrap.sh root@<server address>:/
-cd /
-ssh root@<server address>
-./bootstrap.sh
-```
-
 - docker-compose examples
 ```yml
 version: "3.7"
@@ -76,6 +59,24 @@ volumes:
   appdb:
 
 ```
+
+- bootstrap.sh
+```bash
+mkdir -p app-compose
+cd app-compose || exit
+curl -o docker-compose.yml http://data.app.v-ju.com.cn/docker-compose.yml
+docker-compose up -d
+echo 'services started successfully, use docker-compose ps to inspect your services'
+```
+
+- setup in server
+```bash
+scp bootstrap.sh root@<server address>:/
+ssh root@<server address>
+cd /
+./bootstrap.sh
+```
+
 
 - inspect your services
 ```bash
