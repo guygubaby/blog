@@ -47,6 +47,21 @@ module.exports = {
           }
         ]
       },
+      {
+        title:'js',
+        path:'/js/',
+        collapsable: false,
+        children:[
+          {
+            title: 'dataset兼容问题',
+            path:'/js/dataset'
+          },
+          {
+            title: '浏览器下载兼容',
+            path: '/js/download'
+          }
+        ]
+      }
     ]
   }
 }
