@@ -61,6 +61,17 @@ module.exports = {
             path: '/js/download'
           }
         ]
+      },
+      {
+        title:'python',
+        path:'/python/',
+        collapsable: false,
+        children:[
+          {
+            title: 'anaconda tutorial',
+            path:'/python/anaconda'
+          }
+        ]
       }
     ]
   }
