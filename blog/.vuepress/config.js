@@ -70,6 +70,10 @@ module.exports = {
           {
             title: 'anaconda tutorial',
             path:'/python/anaconda'
+          },
+          {
+            title: 'pandas',
+            path:'/python/pandas'
           }
         ]
       }

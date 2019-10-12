@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>learn pandas | Hi there</title>
+    <meta name="description" content="guygubaby blog">
+    
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.2b8e9abc.css" as="style"><link rel="preload" href="/blog/assets/js/app.372b518a.js" as="script"><link rel="preload" href="/blog/assets/js/2.83a5e818.js" as="script"><link rel="preload" href="/blog/assets/js/14.a64ba61b.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.fc3bf902.js"><link rel="prefetch" href="/blog/assets/js/11.a2d8cf2b.js"><link rel="prefetch" href="/blog/assets/js/12.51a92a09.js"><link rel="prefetch" href="/blog/assets/js/13.2d707f71.js"><link rel="prefetch" href="/blog/assets/js/15.9a529525.js"><link rel="prefetch" href="/blog/assets/js/3.f1736c37.js"><link rel="prefetch" href="/blog/assets/js/4.d8d4b1d8.js"><link rel="prefetch" href="/blog/assets/js/5.72e3a78a.js"><link rel="prefetch" href="/blog/assets/js/6.e57079dd.js"><link rel="prefetch" href="/blog/assets/js/7.40a2fcb5.js"><link rel="prefetch" href="/blog/assets/js/8.03b5938f.js"><link rel="prefetch" href="/blog/assets/js/9.88e78988.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.2b8e9abc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Hi there</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/guygubaby" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/guygubaby/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/guygubaby" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/guygubaby/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/blog/" class="sidebar-link">welcome</a></li><li><section class="sidebar-group depth-0"><a href="/blog/docker/" class="sidebar-heading clickable"><span>docker</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/docker/mongo.html" class="sidebar-link">mongodb 数据迁移</a></li><li><a href="/blog/docker/compose.html" class="sidebar-link">docker-compose 例子</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/blog/js/" class="sidebar-heading clickable"><span>js</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/js/dataset.html" class="sidebar-link">dataset兼容问题</a></li><li><a href="/blog/js/download.html" class="sidebar-link">浏览器下载兼容</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/blog/python/" class="sidebar-heading clickable router-link-active open"><span>python</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/python/anaconda.html" class="sidebar-link">anaconda tutorial</a></li><li><a href="/blog/python/pandas.html" class="active sidebar-link">pandas</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="learn-pandas"><a href="#learn-pandas" aria-hidden="true" class="header-anchor">#</a> learn pandas</h1> <blockquote><p><a href="https://github.com/guipsamora/pandas_exercises" target="_blank" rel="noopener noreferrer">https://github.com/guipsamora/pandas_exercises<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <ul><li>Ex2 - Getting and Knowing your Data</li></ul> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+
+url <span class="token operator">=</span> <span class="token string">'https://raw.githubusercontent.com/justmarkham/DAT8/master/data/chipotle.tsv'</span>
+chipo <span class="token operator">=</span> df<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>url<span class="token punctuation">,</span>sep<span class="token operator">=</span><span class="token string">'\t'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>chipo<span class="token punctuation">.</span>index<span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+Int64Index([   0,    1,    2,    3,    4,    5,    6,    7,    8,    9,
+            ...
+            4612, 4613, 4614, 4615, 4616, 4617, 4618, 4619, 4620, 4621],
+           dtype='int64', length=4622)
+'''</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>chipo<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+
+   order_id  ...  item_price
+0         1  ...      $2.39 
+1         1  ...      $3.39 
+2         1  ...      $3.39 
+3         1  ...      $2.39 
+4         2  ...     $16.98 
+
+'''</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>chipo<span class="token punctuation">.</span>columns<span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+Index(['order_id', 'quantity', 'item_name', 'choice_description',
+       'item_price'],
+      dtype='object')
+'''</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>chipo<span class="token punctuation">.</span>groupby<span class="token punctuation">(</span><span class="token string">'item_name'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+Veggie Burrito                          852.231579  1.021053
+Veggie Crispy Tacos                     668.000000  1.000000
+Veggie Salad                           1210.833333  1.000000
+Veggie Salad Bowl                       961.277778  1.000000
+Veggie Soft Tacos                       788.571429  1.142857
+...
+
+'''</span>
+
+c <span class="token operator">=</span> chipo<span class="token punctuation">.</span>groupby<span class="token punctuation">(</span><span class="token string">'item_name'</span><span class="token punctuation">)</span>
+c <span class="token operator">=</span> c<span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+c <span class="token operator">=</span> c<span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'quantity'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>ascending<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>c<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+                     order_id  quantity
+item_name                              
+Chicken Bowl           713926       761
+Chicken Burrito        497303       591
+Chips and Guacamole    449959       506
+Steak Burrito          328437       386
+Canned Soft Drink      304753       351
+'''</span>
+
+chipo<span class="token punctuation">.</span>item_price <span class="token operator">=</span> chipo<span class="token punctuation">.</span>item_price<span class="token punctuation">.</span><span class="token builtin">apply</span><span class="token punctuation">(</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> <span class="token builtin">float</span><span class="token punctuation">(</span>x<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>chipo<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>chipo<span class="token punctuation">.</span>item_price<span class="token punctuation">.</span>dtype<span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+4         2  ...     $16.98 
+
+[5 rows x 5 columns]
+  order_id  ...  item_price
+0         1  ...        2.39
+
+float64
+'''</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>chipo<span class="token punctuation">.</span>item_name<span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 50</span>
+
+</code></pre></div><ul><li>groupby image</li></ul> <p><img src="/blog/images/python/pandas/pandas_groupby.webp" alt="groupby"></p> <ul><li>Ex3 - Getting and Knowing your Data</li></ul> <div class="language-py extra-class"><pre class="language-py"><code><span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+
+users <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_table<span class="token punctuation">(</span><span class="token string">'https://raw.githubusercontent.com/justmarkham/DAT8/master/data/u.user'</span><span class="token punctuation">,</span>sep<span class="token operator">=</span><span class="token string">'|'</span><span class="token punctuation">,</span>index_col<span class="token operator">=</span><span class="token string">'user_id'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>users<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># first 20</span>
+<span class="token triple-quoted-string string">'''
+         age gender     occupation zip_code
+user_id                                    
+1         24      M     technician    85711
+2         53      F          other    94043
+3         23      M         writer    32067
+...
+'''</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>users<span class="token punctuation">.</span>tail<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># last 5</span>
+
+count <span class="token operator">=</span> users<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token comment"># 943</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>users<span class="token punctuation">.</span>columns<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">'''
+Index(['age', 'gender', 'occupation', 'zip_code'], dtype='object')
+'''</span>
+users<span class="token punctuation">.</span>dtypes
+<span class="token triple-quoted-string string">'''
+age            int64
+gender        object
+occupation    object
+zip_code      object
+dtype: object
+'''</span>
+
+<span class="token comment"># Print only the occupation column</span>
+users<span class="token punctuation">.</span>occupation 
+<span class="token comment">#OR</span>
+users<span class="token punctuation">[</span><span class="token string">'occupation'</span><span class="token punctuation">]</span>
+
+<span class="token comment"># How many different occupations there are in this dataset?</span>
+users<span class="token punctuation">.</span>occupation<span class="token punctuation">.</span>nunique<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># 21</span>
+
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>users<span class="token punctuation">.</span>occupation<span class="token punctuation">.</span>unique<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">'''
+['technician' 'other' 'writer' 'executive' 'administrator' 'student'
+ 'lawyer' 'educator' 'scientist' 'entertainment' 'programmer' 'librarian'
+ 'homemaker' 'artist' 'engineer' 'marketing' 'none' 'healthcare' 'retired'
+ 'salesman' 'doctor']
+ '''</span>
+ <span class="token keyword">print</span><span class="token punctuation">(</span>users<span class="token punctuation">.</span>occupation<span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+ <span class="token triple-quoted-string string">'''
+ student          196
+other            105
+educator          95
+...
+doctor             7
+Name: occupation, dtype: int64
+'''</span>
+
+<span class="token comment"># Summarize the DataFrame.</span>
+users<span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">#Notice: By default, only the numeric columns are returned. </span>
+<span class="token triple-quoted-string string">'''
+              age
+count  943.000000
+mean    34.051962
+std     12.192740
+min      7.000000
+25%     25.000000
+50%     31.000000
+75%     43.000000
+max     73.000000
+'''</span>
+
+<span class="token comment"># Summarize all the columns</span>
+users<span class="token punctuation">.</span>describe<span class="token punctuation">(</span>include <span class="token operator">=</span> <span class="token string">&quot;all&quot;</span><span class="token punctuation">)</span> <span class="token comment">#Notice: By default, only the numeric columns are returned.</span>
+<span class="token triple-quoted-string string">'''
+               age gender occupation zip_code
+count   943.000000    943        943      943
+unique         NaN      2         21      795
+top            NaN      M    student    55414
+freq           NaN    670        196        9
+mean     34.051962    NaN        NaN      NaN
+std      12.192740    NaN        NaN      NaN
+min       7.000000    NaN        NaN      NaN
+25%      25.000000    NaN        NaN      NaN
+50%      31.000000    NaN        NaN      NaN
+75%      43.000000    NaN        NaN      NaN
+max      73.000000    NaN        NaN      NaN
+'''</span>
+<span class="token comment"># Summarize only the occupation column</span>
+users<span class="token punctuation">.</span>occupation<span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># What is the mean age of users?</span>
+<span class="token builtin">round</span><span class="token punctuation">(</span>users<span class="token punctuation">.</span>age<span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 查看 occupation 中有哪些不同的值，并计算每个值有多少个重复值</span>
+users<span class="token punctuation">.</span>occupation<span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">'''
+student          196
+other            105
+educator          95
+administrator     79
+engineer          67
+programmer        66
+librarian         51
+writer            45
+executive         32
+scientist         31
+artist            28
+technician        27
+marketing         26
+entertainment     18
+healthcare        16
+retired           14
+lawyer            12
+salesman          12
+none               9
+homemaker          7
+doctor             7
+Name: occupation, dtype: int64
+'''</span>
+</code></pre></div><ul><li>next 01_... &gt; World Food Facts</li></ul> <p><a href="https://github.com/guipsamora/pandas_exercises/blob/master/01_Getting_%26_Knowing_Your_Data/World%20Food%20Facts/Exercises_with_solutions.ipynb" target="_blank" rel="noopener noreferrer">World Food Facts<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/guygubaby/blog/edit/master/blog/python/pandas.md" target="_blank" rel="noopener noreferrer">帮助我改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/blog/python/anaconda.html" class="prev">
+          anaconda tutorial
+        </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.372b518a.js" defer></script><script src="/blog/assets/js/2.83a5e818.js" defer></script><script src="/blog/assets/js/14.a64ba61b.js" defer></script>
+  </body>
+</html>
