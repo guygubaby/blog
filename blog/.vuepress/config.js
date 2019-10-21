@@ -76,6 +76,17 @@ module.exports = {
             path:'/python/pandas'
           }
         ]
+      },
+      {
+        title:'golang',
+        path:'/golang/',
+        collapsable: false,
+        children:[
+          {
+            title: 'go mod with goland',
+            path:'/golang/gomod'
+          },
+        ]
       }
     ]
   }
