@@ -1,9 +1,9 @@
 <h1 align="center">Welcome to my blog 👋</h1>
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
-![travis](https://api.travis-ci.com/guygubaby/blog.svg?branch=master)
+<p align="center">
+  <a href="https://travis-ci.com/guygubaby/blog"><img alt="travis" src="https://api.travis-ci.com/guygubaby/blog.svg?branch=master"></a>
 
+  <img alt="version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000">
 
+</p>
 
-
-Give a ⭐️ if this project helped you!

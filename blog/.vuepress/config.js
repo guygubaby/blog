@@ -27,15 +27,15 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: 'welcome',   // 必要的
-        path: '/',      // 可选的, 应该是一个绝对路径
-        collapsable: false, // 可选的, 默认值是 true,
-        sidebarDepth: 1,    // 可选的, 默认值是 1
+        title: 'welcome',
+        path: '/',
+        collapsable: true,
+        sidebarDepth: 1,
       },
       {
-        title: 'docker',   // 必要的
-        path: '/docker/',      // 可选的, 应该是一个绝对路径
-        collapsable: false, // 可选的, 默认值是 true,
+        title: 'docker',
+        path: '/docker/', 
+        collapsable: true, 
         children:[
           { 
             title:'mongodb 数据迁移',
@@ -50,7 +50,7 @@ module.exports = {
       {
         title:'js',
         path:'/js/',
-        collapsable: false,
+        collapsable: true,
         children:[
           {
             title: 'dataset兼容问题',
@@ -65,7 +65,7 @@ module.exports = {
       {
         title:'python',
         path:'/python/',
-        collapsable: false,
+        collapsable: true,
         children:[
           {
             title: 'anaconda tutorial',
@@ -80,7 +80,7 @@ module.exports = {
       {
         title:'golang',
         path:'/golang/',
-        collapsable: false,
+        collapsable: true,
         children:[
           {
             title: 'go mod with goland',
