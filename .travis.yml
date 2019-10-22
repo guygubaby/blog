@@ -1,0 +1,22 @@
+language: node_js
+
+node_js:
+  - "10.x"
+
+services:
+  - docker
+
+sudo: required
+
+install:
+  - npm install
+
+script:
+  - ./deploy.sh
+
+notifications:
+  email: 
+    recipients:
+      - 1907004005@qq.com
+    on_success: change
+    on_failure: always
