@@ -4,7 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev":"vuepress dev blog",
+    "dev": "vuepress dev blog",
     "build": "vuepress build blog"
+  },
+  "dependencies": {
+    "vuepress": "^1.2.0"
   }
 }
