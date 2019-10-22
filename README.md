@@ -3,10 +3,7 @@
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-- category
-
-  - [docker](https://guygubaby.github.io/blog/docker/)
-
+![travis](https://api.travis-ci.com/guygubaby/blog.svg?branch=master)
 
 ## Show your support
 
