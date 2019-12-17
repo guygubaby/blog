@@ -29,13 +29,13 @@ module.exports = {
       {
         title: 'welcome',
         path: '/',
-        collapsable: true,
+        collapsable: false,
         sidebarDepth: 1,
       },
       {
         title: 'docker',
         path: '/docker/', 
-        collapsable: true, 
+        collapsable: false, 
         children:[
           { 
             title:'mongodb 数据迁移',
@@ -50,7 +50,7 @@ module.exports = {
       {
         title:'js',
         path:'/js/',
-        collapsable: true,
+        collapsable: false,
         children:[
           {
             title: 'dataset兼容问题',
@@ -63,9 +63,20 @@ module.exports = {
         ]
       },
       {
+        title:'vue',
+        path:'/vue/',
+        collapsable: false,
+        children:[
+          {
+            title: 'vuex restore',
+            path:'/vue/vuex-restore'
+          }
+        ]
+      },
+      {
         title:'python',
         path:'/python/',
-        collapsable: true,
+        collapsable: false,
         children:[
           {
             title: 'anaconda tutorial',
@@ -80,7 +91,7 @@ module.exports = {
       {
         title:'golang',
         path:'/golang/',
-        collapsable: true,
+        collapsable: false,
         children:[
           {
             title: 'go mod with goland',
