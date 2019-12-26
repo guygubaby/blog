@@ -70,6 +70,10 @@ module.exports = {
           {
             title: 'vuex restore',
             path:'/vue/vuex-restore'
+          },
+          {
+            title: 'vue deploy',
+            path:'/vue/vue-deploy'
           }
         ]
       },
