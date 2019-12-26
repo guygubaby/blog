@@ -71,6 +71,8 @@ module.exports = {
 
 ## subfolder way
 
+### tips (vue-router mode can not be `history`)
+
 vue.config.js
 ```js
 module.exports = {
@@ -87,9 +89,6 @@ EXPOSE 80
 ```
 
 nginx.conf
-
-
-- parent nginx & docker inner nginx
 
 - nginx.conf (parent)
 
@@ -114,13 +113,9 @@ location / {
 
 ```nginx
 location ~ /aihomeApi {
-    rewrite              ^/aihomeApi/(.*)$ /$1 break;
-    resolver             127.0.0.11;
-    set                  $sass saas.nexhome.cn:443;
-    proxy_pass           http://$sass;
-    #                    rewrite ^/aihomeApi/(.*)$ /$1 break;
-    #                    proxy_pass https://test.saas.nexhome.cn;
-    #                    proxy_pass https://saas.nexhome.cn;
+    rewrite ^/aihomeApi/(.*)$ /$1 break;
+    proxy_pass https://test.saas.nexhome.cn;
+    proxy_pass https://saas.nexhome.cn;
 }
-
 ```
+
