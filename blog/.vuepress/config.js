@@ -63,6 +63,17 @@ module.exports = {
         ]
       },
       {
+        title:'css',
+        path:'/css/',
+        collapsable: false,
+        children:[
+          {
+            title: 'learn',
+            path:'/css/learn'
+          }
+        ]
+      },
+      {
         title:'vue',
         path:'/vue/',
         collapsable: false,
