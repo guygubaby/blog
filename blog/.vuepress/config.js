@@ -113,6 +113,17 @@ module.exports = {
             path:'/golang/gomod'
           },
         ]
+      },
+      {
+        title:'server',
+        path:'/server/',
+        collapsable: false,
+        // children:[
+        //   {
+        //     title: '服务器被挖矿入侵',
+        //     path:'/server/gomod'
+        //   },
+        // ]
       }
     ]
   }
