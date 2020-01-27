@@ -15,5 +15,5 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: datav/.vuepress/dist
+        FOLDER: blog/.vuepress/dist
         BUILD_SCRIPT: yarn && yarn build
